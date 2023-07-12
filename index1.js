@@ -52,8 +52,8 @@ function loadQuestions() {
     // show options
     var choices = quiz.getQuestionByIndex().choices;
     for (var i = 0; i < choices.length; i++) {
-      var element = document.getElementById("choice" + i);
-      element.innerHTML = choices[i];
+      var choiceElement = document.getElementById("choice" + i);
+      choiceElement.innerHTML = choices[i];
       handleOptionButton("btn" + i, choices[i]);
     }
 
